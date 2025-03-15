@@ -23,7 +23,7 @@ app.use(
 
 
 // Routes
-app.use(userRoute);
+app.use("/api/users",userRoute);
 
 app.get("/", (req, res) => {
   res.send("Home Page");
