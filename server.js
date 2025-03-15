@@ -21,7 +21,6 @@ app.use(
   })
 );
 
-app.options('*', cors());
 
 // Routes
 app.use("/api/users", userRoute);
