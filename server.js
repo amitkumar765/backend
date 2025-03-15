@@ -16,7 +16,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://auth-app.varcel.app"],
+    origin: ["https://frontend-sepia-mu-42.vercel.app/", "https://frontend-sepia-mu-42.vercel.app/"],
     credentials: true,
   })
 );
