@@ -10,12 +10,12 @@ const errorHandler = require("./middleware/errorMiddleware");
 const app = express();
 
 // Middlewares
-const corsOptions = {
-origin: "https://frontend-sepia-mu-42.vercel.app",
-methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: ["https://frontend-sepia-mu-42.vercel.app","http://localhost:3000"],
+    credentials: true,
+  })
+  );
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
