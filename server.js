@@ -12,7 +12,7 @@ const app = express();
 // Middlewares
 app.use(
   cors({
-    origin: ["https://frontend-sepia-mu-42.vercel.app","http://localhost:3000"],
+    origin: ["https://frontend-sepia-mu-42.vercel.app","https://peaceful-beijinho-c81407.netlify.app"],
     credentials: true,
   })
   );
